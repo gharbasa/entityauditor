@@ -1,0 +1,215 @@
+CREATE TABLE `ereg_cpa`.`entity_audit` (
+  `id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+  `entity` VARCHAR(45) NULL,
+  `row_id` VARCHAR(255) NULL,
+  `operation` VARCHAR(45) NULL,
+  `old_values` LONGTEXT NULL,
+  `new_values` LONGTEXT NULL,
+  `created_by` VARCHAR(255) NULL,
+  `created_date` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_date` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`));
+
+
+------------------------------------------------------------
+spring.jpa.properties.hibernate.ejb.interceptor: com.dt.rts.eregusa.audit.interceptor.ERegHibernateInterceptor    
+
+
+
+eregusaaudit:
+  sqs-queue: eregusaauditentities
+  jdbc-audit: true
+  entities:
+    - 
+      entity: User
+      attributes: firstName, lastName, middleName
+    - 
+      entity: Client
+      attributes: displayName, name, regUsaCode
+    - 
+      entity: DmsProfile
+      attributes: storeName, dmsProvider, client, updatedBy
+------------------------------------------------------------
+build
+compile files('/Users/abed.ali/eRegUSA/gheGit/entityauditor/build/libs/entityauditor-4.1.1.jar')
+
+Application   
+@ComponentScan({"com.dt.rts.eregusa.audit.config"})
+
+@EntityScan( basePackages = {"com.dt.rts.eregusa.dsq.entity"})
+
+------------------------------------------------------------
+
+/**
+	 * 
+GenericInterceptor entity.name=class com.dt.rts.eregusa.cpa.entity.User, id=885
+GenericInterceptor property name=active
+GenericInterceptor property name=activityHistory
+GenericInterceptor property name=administrator
+GenericInterceptor property name=clientOlrsUsers
+GenericInterceptor property name=comments
+GenericInterceptor property name=emailAddress
+GenericInterceptor property name=emailTypes
+GenericInterceptor property name=faxNumber
+GenericInterceptor property name=firstName
+GenericInterceptor property name=fusionId
+GenericInterceptor property name=isCrsRep
+GenericInterceptor property name=isPrimaryUser
+GenericInterceptor property name=lastName
+GenericInterceptor property name=middleName
+GenericInterceptor property name=mobilePhoneNumber
+GenericInterceptor property name=notificationMethod
+GenericInterceptor property name=password
+GenericInterceptor property name=phoneExt
+GenericInterceptor property name=phoneNumber
+GenericInterceptor property name=processor
+GenericInterceptor property name=role
+GenericInterceptor property name=roleName
+GenericInterceptor property name=securityAnswer1
+GenericInterceptor property name=securityAnswer2
+GenericInterceptor property name=securityAnswer3
+GenericInterceptor property name=securityQuestion1
+GenericInterceptor property name=securityQuestion2
+GenericInterceptor property name=securityQuestion3
+GenericInterceptor property name=softDelete
+GenericInterceptor property name=title
+GenericInterceptor property name=userName
+GenericInterceptor property type=org.hibernate.type.BooleanType@2cba46eb
+GenericInterceptor property type=org.hibernate.type.BagType(com.dt.rts.eregusa.cpa.entity.User.activityHistory)
+GenericInterceptor property type=org.hibernate.type.BooleanType@2cba46eb
+GenericInterceptor property type=org.hibernate.type.BagType(com.dt.rts.eregusa.cpa.entity.User.clientOlrsUsers)
+GenericInterceptor property type=org.hibernate.type.BagType(com.dt.rts.eregusa.cpa.entity.User.comments)
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.BagType(com.dt.rts.eregusa.cpa.entity.User.emailTypes)
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.LongType@6e6c6e16
+GenericInterceptor property type=org.hibernate.type.BooleanType@2cba46eb
+GenericInterceptor property type=org.hibernate.type.BooleanType@2cba46eb
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.BooleanType@2cba46eb
+GenericInterceptor property type=org.hibernate.type.LongType@6e6c6e16
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.BooleanType@2cba46eb
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property type=org.hibernate.type.StringType@970baf2
+GenericInterceptor property currentState=true
+GenericInterceptor property currentState=[[886]:1969-12-30 19:00:00.0|[101]:New user|Activated|test01|]
+GenericInterceptor property currentState=true
+GenericInterceptor property currentState=[]
+GenericInterceptor property currentState=[]
+GenericInterceptor property currentState=a.a@mail.com
+GenericInterceptor property currentState=[]
+GenericInterceptor property currentState=123.456.7890
+GenericInterceptor property currentState=first1
+GenericInterceptor property currentState=0
+GenericInterceptor property currentState=false
+GenericInterceptor property currentState=false
+GenericInterceptor property currentState=last333
+GenericInterceptor property currentState=67
+GenericInterceptor property currentState=123.456.7890
+GenericInterceptor property currentState=null
+GenericInterceptor property currentState=null
+GenericInterceptor property currentState=null
+GenericInterceptor property currentState=123.456.7890
+GenericInterceptor property currentState=false
+GenericInterceptor property currentState=9
+GenericInterceptor property currentState=Combined F&I/Title Clerk
+GenericInterceptor property currentState=null
+GenericInterceptor property currentState=null
+GenericInterceptor property currentState=null
+GenericInterceptor property currentState=null
+GenericInterceptor property currentState=null
+GenericInterceptor property currentState=null
+GenericInterceptor property currentState=false
+GenericInterceptor property currentState=67
+GenericInterceptor property currentState=885
+GenericInterceptor property previousState=true
+GenericInterceptor property previousState=[[886]:1969-12-30 19:00:00.0|[101]:New user|Activated|test01|]
+GenericInterceptor property previousState=true
+GenericInterceptor property previousState=[]
+GenericInterceptor property previousState=[]
+GenericInterceptor property previousState=a.a@mail.com
+GenericInterceptor property previousState=[]
+GenericInterceptor property previousState=123.456.7890
+GenericInterceptor property previousState=first1
+GenericInterceptor property previousState=0
+GenericInterceptor property previousState=false
+GenericInterceptor property previousState=false
+GenericInterceptor property previousState=last222
+GenericInterceptor property previousState=67
+GenericInterceptor property previousState=123.456.7890
+GenericInterceptor property previousState=null
+GenericInterceptor property previousState=null
+GenericInterceptor property previousState=null
+GenericInterceptor property previousState=123.456.7890
+GenericInterceptor property previousState=false
+GenericInterceptor property previousState=9
+GenericInterceptor property previousState=Combined F&I/Title Clerk
+GenericInterceptor property previousState=null
+GenericInterceptor property previousState=null
+GenericInterceptor property previousState=null
+GenericInterceptor property previousState=null
+GenericInterceptor property previousState=null
+GenericInterceptor property previousState=null
+GenericInterceptor property previousState=false
+GenericInterceptor property previousState=67
+GenericInterceptor property previousState=885
+GenericInterceptor its an user entity [885]:true|true|false|a.a@mail.com|null|null|123.456.7890|null|null|null|null|null|null|885|first1|last333|67|67|123.456.7890|null|123.456.7890|9|Combined F&I/Title Clerk|false|0|false|[]
+
+	 */
+	 
+	 
+GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.ManyToOneType(com.dt.rts.eregusa.cpa.entity.Client)
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.TimestampType@67cca69a
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=BasicType adapter for AttributeConverter<String,String>
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.045  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.BooleanType@792e6a64
+2019-07-30 22:30:25.046  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.LongType@bc83f56
+2019-07-30 22:30:25.046  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.TimestampType@67cca69a
+2019-07-30 22:30:25.046  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.046  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.StringType@6911661f
+2019-07-30 22:30:25.046  INFO [cpa-service,7b081e61b5449a4d,d8eabc2117d6061a,false] 75617 --- [  XNIO-2 task-6] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property type=org.hibernate.type.LongType@bc83f56
+
+
+
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=com.dt.rts.eregusa.cpa.entity.Client, returnedClass=com.dt.rts.eregusa.cpa.entity.Client, type.isEntityType()=true
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=timestamp, returnedClass=java.util.Date, type.isEntityType()=false
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.323  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=converted::com.dt.rts.eregusa.cpa.utility.EncryptColumnConverter, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.324  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.324  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=boolean, returnedClass=java.lang.Boolean, type.isEntityType()=false
+2019-07-30 22:41:38.324  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=long, returnedClass=java.lang.Long, type.isEntityType()=false
+2019-07-30 22:41:38.324  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=timestamp, returnedClass=java.util.Date, type.isEntityType()=false
+2019-07-30 22:41:38.324  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.324  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=string, returnedClass=java.lang.String, type.isEntityType()=false
+2019-07-30 22:41:38.324  INFO [cpa-service,4d87c6d6701b7b14,86f69f22b51a5246,false] 76817 --- [  XNIO-2 task-1] c.d.r.e.a.i.ERegHibernateInterceptor     : GenericInterceptor property typeName=long, returnedClass=java.lang.Long, type.isEntityType()=false

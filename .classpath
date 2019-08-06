@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/main" kind="src" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/java">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/test" kind="src" path="src/test/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="test"/>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/677abe279b68c5e7490d6d50c6951376238d7d3e/log4j-1.2.17-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-hibernate4/2.8.11/db7f0de58cb82b12af2a9c97b3dcdae51ccdaff5/jackson-datatype-hibernate4-2.8.11-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-hibernate4/2.8.11/5f053f71745874cf2826c4b797c462f2b70298ba/jackson-datatype-hibernate4-2.8.11.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-s3/1.11.367/6da620799f67a650dfd115fcbd626224b5d75a92/aws-java-sdk-s3-1.11.367-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-s3/1.11.367/855d4f2fecc490d6add6bc1c57f35b0abc9b62c2/aws-java-sdk-s3-1.11.367.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-sns/1.11.338/f7c23e483b9d2bbf6951108255625c3989b3efdd/aws-java-sdk-sns-1.11.338-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-sns/1.11.338/bcb359684ffcdb59a000673273f114dea016035c/aws-java-sdk-sns-1.11.338.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-ses/1.11.338/be964195066f87eb9dcfa01acba30d1f329eef99/aws-java-sdk-ses-1.11.338-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-ses/1.11.338/3d54fd2d62f452ddb3b1f0fd25864b83c875489b/aws-java-sdk-ses-1.11.338.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-sts/1.11.338/b4f2224d148fea4c48fb7c60c478032e025e28d6/aws-java-sdk-sts-1.11.338-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-sts/1.11.338/be819308f14caad585464dd05e9870a61d1c7863/aws-java-sdk-sts-1.11.338.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-sqs/1.11.536/be375c8690376026e33ff1312a091a3c3eab7525/aws-java-sdk-sqs-1.11.536-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-sqs/1.11.536/93f38ff0ea9b20d1ec3150fe3a5cd005f935b552/aws-java-sdk-sqs-1.11.536.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-kms/1.11.367/5213c52d32c30be0bba84e6c2bfb282fd78b4d09/aws-java-sdk-kms-1.11.367-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-kms/1.11.367/7242aacf8565d8a8d52dfa3bca34980bbf7b1d38/aws-java-sdk-kms-1.11.367.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-core/1.11.338/d3c4f1f9c4837fd983927ec621301fa0b0c96dd9/aws-java-sdk-core-1.11.338-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-java-sdk-core/1.11.338/2b8fd2d276d972cd4796a7383b3740fa99e78e14/aws-java-sdk-core-1.11.338.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-hibernate5/2.9.1/6e548b578bb813906e8289d0c566da773b4919bb/jackson-datatype-hibernate5-2.9.1-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-hibernate5/2.9.1/668f5ab65f863c665c8d8c7d919470f4379f3452/jackson-datatype-hibernate5-2.9.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.5.19.RELEASE/57e58ea3ccc5243d0efb1d521e2aceaa0037fb4a/spring-boot-starter-web-1.5.19.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.5.19.RELEASE/caf4a593c6b6d6fa66ccf7d6868363130515365a/spring-boot-starter-web-1.5.19.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/jmespath-java/1.11.536/363fc7cdd2d11da6002560c418a3eb95f07fdde9/jmespath-java-1.11.536-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.amazonaws/jmespath-java/1.11.536/808330386aa4a64b4061c7e5018967cfac17e60c/jmespath-java-1.11.536.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.11.2/48264b5cd9206472c8ad6a0442c8acfcff1188e6/jackson-databind-2.8.11.2-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.11.2/2c5051e8e84d2c16316b758ebf746f9e90bef5a4/jackson-databind-2.8.11.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-ehcache/5.2.4.Final/cbba2e632264502cde335d9724b9706fd1f44670/hibernate-ehcache-5.2.4.Final-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-ehcache/5.2.4.Final/f70147c655b970ca70e3913f91880da6d264fe68/hibernate-ehcache-5.2.4.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/1.5.19.RELEASE/44a9f6098973af46bd5c76cbf25e246b1e3d8f77/spring-boot-starter-data-jpa-1.5.19.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/1.5.19.RELEASE/158a8619ac9bd08d995450f1c4d768ca8adc9a98/spring-boot-starter-data-jpa-1.5.19.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/5.0.12.Final/4b8ac7bb495c3509801a4f0744d6d6a6533ca0a/hibernate-entitymanager-5.0.12.Final-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-entitymanager/5.0.12.Final/302a526f5058290e9cbd719a5caf9f248d344719/hibernate-entitymanager-5.0.12.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.2.4.Final/440725374575de2319da40115c8879010be7b519/hibernate-core-5.2.4.Final-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.2.4.Final/52414fccd4429d8f723996e26c61330df094d06c/hibernate-core-5.2.4.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.ehcache/ehcache/3.4.0/45f83bcf2e286a312f13491b03c2b409d0a02984/ehcache-3.4.0-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.ehcache/ehcache/3.4.0/cac1f0840af0040a81401dfa55fa31a4ccc17932/ehcache-3.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.vladmihalcea/hibernate-types-52/1.2.0/65860f40c87a78be3570d5dfecf7f9883cfd8a56/hibernate-types-52-1.2.0-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.vladmihalcea/hibernate-types-52/1.2.0/6b2120e87bbfa11110a6ca9d4ffecd3cfc043e59/hibernate-types-52-1.2.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.16/59ae3d4de603e6aae7dafb4a0d7b85e0a9e187f1/mysql-connector-java-8.0.16-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.16/6088b7a25188ab4b3ab865422a8ec77ade29236/mysql-connector-java-8.0.16.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.security.oauth/spring-security-oauth2/2.0.17.RELEASE/37426990f7f79feb9fb36546a1838b9d5a188756/spring-security-oauth2-2.0.17.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.security.oauth/spring-security-oauth2/2.0.17.RELEASE/1f5ce29e8c28a4f18a5f46ba9717071c4517e980/spring-security-oauth2-2.0.17.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.18.RELEASE/2c83099cbc605c1a6317adacb9e8e274dd804408/spring-webmvc-4.3.18.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.18.RELEASE/67ad7f59830df97ab73f8c7ab53ea33ae7dcb68/spring-webmvc-4.3.18.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.11.RELEASE/6ae39f09ca5e9afcd0593e5d41578252d9e1e3f6/spring-security-web-4.2.11.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.2.11.RELEASE/714f2fe9c43b8b3111d953d2fb57273bdffa32bc/spring-security-web-4.2.11.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.18.RELEASE/119af634ec8be34e3c8c695e05f60f84b03fa7b1/spring-web-4.3.18.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.18.RELEASE/e41042a70a7d80da52261c1dfc569c7518b70dce/spring-web-4.3.18.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.3.18.RELEASE/651332ae9afa3fd65eda36220e388585cb43f19c/spring-context-support-4.3.18.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.3.18.RELEASE/d14d5b7c7fd060e345d5aebbe151e27d2c69ba6a/spring-context-support-4.3.18.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.2.11.RELEASE/7d0e9b5aab8c406745a50861f5fe5666a3dae516/spring-security-config-4.2.11.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.2.11.RELEASE/30e4a5a5a3663d17290921d154caeaf0254741a/spring-security-config-4.2.11.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.11.RELEASE/fc8020e280e078771b10808ab40d1da0d086b06e/spring-security-core-4.2.11.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.2.11.RELEASE/94833c81d0df9a66bf6dd27baf17b73d6ac85d73/spring-security-core-4.2.11.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.11.18.RELEASE/2e210cd560a559f40108590e019679b33da5e8b5/spring-data-jpa-1.11.18.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/1.11.18.RELEASE/425cb6cd31a547c96c63539c9a2bf6be1c61ccac/spring-data-jpa-1.11.18.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-hystrix/1.0.6.RELEASE/1f192d4ae71ebb5f0dd2ba8e48896ee894f18fce/spring-cloud-starter-hystrix-1.0.6.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter-hystrix/1.0.6.RELEASE/19d496ee15f0a1f21c3e0bccd121aafdcb54160a/spring-cloud-starter-hystrix-1.0.6.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter/1.0.5.RELEASE/a036d56cc75e910cff97e3874c974ee0c3395aaa/spring-cloud-starter-1.0.5.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-starter/1.0.5.RELEASE/ecd553050a3692398f8b7b4a831d5c5822635b73/spring-cloud-starter-1.0.5.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/1.5.19.RELEASE/796832c713b8617984f8927ddf807cfdca909876/spring-boot-starter-aop-1.5.19.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/1.5.19.RELEASE/660b6fef59da24e9494d268e527d9d95f7f28556/spring-boot-starter-aop-1.5.19.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/1.5.19.RELEASE/761802aac6c18f24b3dd2e3dbf29931a5bb09bb1/spring-boot-starter-jdbc-1.5.19.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/1.5.19.RELEASE/b2f84e55a1384dfc8edc8ea0506cd3c98b7e1d5d/spring-boot-starter-jdbc-1.5.19.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.5.19.RELEASE/c780af4cccaa113acfa5c85af18acbf7337019d2/spring-boot-starter-1.5.19.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/1.5.19.RELEASE/c93f91adc650e2dc122139cf93ed7814fec04830/spring-boot-starter-1.5.19.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-core/1.0.7.RELEASE/701c5e40970589e0903eb9e120906bdb2e518e48/spring-cloud-netflix-core-1.0.7.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-core/1.0.7.RELEASE/62d666ce0430f395c533b0d8577f13e978dccebe/spring-cloud-netflix-core-1.0.7.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.5.19.RELEASE/af456fd39bf56bb69b91c369aab7f4da33d898e6/spring-boot-autoconfigure-1.5.19.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/1.5.19.RELEASE/4e9a29d2eda96d2e2f135a315dfa55ae0d3484d4/spring-boot-autoconfigure-1.5.19.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.19.RELEASE/944440a9b437e7811549a53b258b3f1e11af6e2a/spring-boot-1.5.19.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.5.19.RELEASE/b2bf5c47a8653e5fbba05c022d99549948bf9665/spring-boot-1.5.19.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.18.RELEASE/6cf1f5915d2db41c55992ddcea5f3361b8fcbc11/spring-context-4.3.18.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.3.18.RELEASE/d302953b509e6d380856e245bf80c29770c08c98/spring-context-4.3.18.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.18.RELEASE/d486e8421316cb392e7f9e595e59d0fc459e0048/spring-expression-4.3.18.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.3.18.RELEASE/64f2270bfd9d615c8c3b9d94995867f39391ed30/spring-expression-4.3.18.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.18.RELEASE/a46658c148c8e9c89a80c08535283189d7d5912d/spring-aop-4.3.18.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.3.18.RELEASE/dd930265a504563d76de79864ae3196f6e9035e0/spring-aop-4.3.18.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.3.22.RELEASE/12d0bd17af9e3607434a088ff1a3d9b9296a2c00/spring-orm-4.3.22.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.3.22.RELEASE/260023d0c6a5ff90eeb0cb4f824677009283ccc9/spring-orm-4.3.22.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.22.RELEASE/bf985f0558c1fb2b4c31f5e1e2808fbf4c7d71fd/spring-jdbc-4.3.22.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.3.22.RELEASE/86db27c5cdeef6d36d2bbb7bfe5bd4bb8543c522/spring-jdbc-4.3.22.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.13.18.RELEASE/5722c78f6c42565cff0dae517fe1085d4bdd64ad/spring-data-commons-1.13.18.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/1.13.18.RELEASE/18c6ff250e3806710b9ba0750ca5e05b5e5ec0f1/spring-data-commons-1.13.18.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.22.RELEASE/bc458770ef4ce721f6d203779fdd8421ddc482f0/spring-tx-4.3.22.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.3.22.RELEASE/9dc7a0c676de844395485664d59b9221d9a13025/spring-tx-4.3.22.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.18.RELEASE/bb309de7acfeb3e4d89095b3e7a19809252e804e/spring-beans-4.3.18.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.3.18.RELEASE/27460686b16b3ffee60bb3365cd56bba6ed860ff/spring-beans-4.3.18.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.18.RELEASE/6ce871ab6fbcc92da74aaa53861a33828b20e346/spring-core-4.3.18.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.3.18.RELEASE/4acbce682c3dfe38181d57b7e0792e2cc21e4f77/spring-core-4.3.18.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/29a1a95363d497e856c0a7d682e4f7973e334068/jackson-annotations-2.8.0-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.8.11/184006c18ca44a79e9bcde99738b176dfea939f/jackson-dataformat-cbor-2.8.11-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.8.11/8b9826e16c3366764bfb7ad7362554f0471046c3/jackson-dataformat-cbor-2.8.11.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-metrics-event-stream/1.4.10/deaf40d1cad29182de5779783428522b11f77b5c/hystrix-metrics-event-stream-1.4.10-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-metrics-event-stream/1.4.10/3a882051f5b918b98c4a5738ff66e97bb75e2221/hystrix-metrics-event-stream-1.4.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.11/1e1df4d8c9ca05f1708e0ce1d842cf82931a7fc9/jackson-core-2.8.11-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.11/876ead1db19f0c9e79c9789273a3ef8c6fd6c29b/jackson-core-2.8.11.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.6/bda84e42670536453ecd61ee70349c2493445994/httpclient-4.5.6-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.6/1afe5621985efe90a92d0fbc9be86271efbe796f/httpclient-4.5.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-javanica/1.4.10/c40a51546d0d2616fc38cc519f4611c1f628472a/hystrix-javanica-1.4.10-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-javanica/1.4.10/5557c0bacd8f1ed1c208578c4b5e2fdbd23dc950/hystrix-javanica-1.4.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-core/1.4.10/7a89317f252276e083207ef3ab13bb88bd89e72a/hystrix-core-1.4.10-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.netflix.hystrix/hystrix-core/1.4.10/453f7b2de4a96b579b31432dc5b5097078fc8b7d/hystrix-core-1.4.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.netflix.archaius/archaius-core/0.4.1/f1c72c442d4c4aed0d1b57b568cfa360af6c75bd/archaius-core-0.4.1-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.netflix.archaius/archaius-core/0.4.1/69e956ddf4543c989461352a214f32a014abd64a/archaius-core-0.4.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/commons-configuration/commons-configuration/1.8/e4dbd8ad69e07fa7f28688f92d773a429143060b/commons-configuration-1.8-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/commons-configuration/commons-configuration/1.8/6cce40435bcd8018018f16898de01976b319941a/commons-configuration-1.8.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/software.amazon.ion/ion-java/1.0.2/3077203a7e79dd126a480da0491ec60238bbb872/ion-java-1.0.2-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/software.amazon.ion/ion-java/1.0.2/ee9dacea7726e495f8352b81c12c23834ffbc564/ion-java-1.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.9/29a9fcf32288cd678b37b372974786f731b982d1/joda-time-2.9.9-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.9/f7b520c458572890807d143670c9b24f4de90897/joda-time-2.9.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/javax.transaction/jta/1.1/d5dad66d06246bd2e1e369cebff27faa9beb065a/jta-1.1-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/javax.transaction/jta/1.1/2ca09f0b36ca7d71b762e14ea2ff09d5eac57558/jta-1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/203038e420aaa3fa6df8bad4fda19ca1e2824005/hibernate-commons-annotations-5.0.1.Final-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.0.1.Final/71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879/hibernate-commons-annotations-5.0.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.3.6.Final/3186793fdb68b63a39f6974c525f552dcdbacca3/hibernate-validator-5.3.6.Final-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.3.6.Final/4c730be8bf55a8e9a61e79a2f2c079abf48b718/hibernate-validator-5.3.6.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/a44f0f22bbd9ccb96952806e73f6cc16ef7d2f67/jboss-logging-3.3.2.Final-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/3789d00e859632e6c6206adc0c71625559e6e3b0/jboss-logging-3.3.2.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/33fbaa7276b774ef0925f541640f6ff23fbc62dc/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/5e731d961297e5a07290bfaf3db1fbc8bbbf405a/hibernate-jpa-2.1-api-1.0.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.21.0-GA/81fefbd46ba6a18fc7af83b9c60b28c0862cd492/javassist-3.21.0-GA-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.21.0-GA/598244f595db5c5fb713731eddbb1c91a58d959b/javassist-3.21.0-GA.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1/a84978fba1f1916bf2931e44d961705a9e64aec7/geronimo-jta_1.1_spec-1.1.1-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1/aabab3165b8ea936b9360abbf448459c0d04a5a4/geronimo-jta_1.1_spec-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.0.Final/614a36762219d78e9ea3be22c47e6c2933e2db71/jandex-2.0.0.Final-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.0.0.Final/3e899258936f94649c777193e1be846387ed54b3/jandex-2.0.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.4/d5aa53c93626884209c1e82fdf44d2ccdaf8e9c2/classmate-1.3.4-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.4/3d5f48f10bbe4eb7bd862f10c0583be2e0053c6/classmate-1.3.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/a8e7149359255f43e0e5e3b1837948f9ed5861fb/dom4j-1.6.1-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/5d3ccc056b6f056dbf0dddfdf43894b9065a8f94/dom4j-1.6.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/net.sf.ehcache/ehcache/2.10.5/6e1237bc1d89722b2b949019e1860805461deb8/ehcache-2.10.5-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/net.sf.ehcache/ehcache/2.10.5/74c1ec0a88bf20a14edb1b30a92b4c33cc6ea6b0/ehcache-2.10.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.5.19.RELEASE/b02c1a2dd42a2b023cfab8bbaee72d418242f0b5/spring-boot-starter-logging-1.5.19.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.5.19.RELEASE/a9529ecfe4446aac782bf4bc3d05101eccfe0d12/spring-boot-starter-logging-1.5.19.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.25/ffd0827a7c67d5915b7dc611afbda56a1f247191/jcl-over-slf4j-1.7.25-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.25/f8c32b13ff142a513eeb5b6330b1588dcb2c0461/jcl-over-slf4j-1.7.25.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.11/2a2f78be7ef674b6486f7b5463f05f40da5e163/logback-classic-1.1.11-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.11/ccedfbacef4a6515d2983e3f89ed753d5d4fb665/logback-classic-1.1.11.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/bcea1530927f59b5128841d3571f879ce3af2e86/jul-to-slf4j-1.7.25-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/af5364cd6679bfffb114f0dec8a157aaa283b76/jul-to-slf4j-1.7.25.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.25/42a10e06ab88cbe5f31253ffb8c0bca96b34f81d/log4j-over-slf4j-1.7.25-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.25/a87bb47468f47ee7aabbd54f93e133d4215769c3/log4j-over-slf4j-1.7.25.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.6.1/b0782bcd21ad5c52031e74efbc4c3d6a6df96130/protobuf-java-3.6.1-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.6.1/d06d46ecfd92ec6d0f3b423b4cd81cb38d8b924/protobuf-java-3.6.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.5.19.RELEASE/932b85cac6686f4c98d761cee425b302762a0ba6/spring-boot-starter-tomcat-1.5.19.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.5.19.RELEASE/86c82e082cbd79747574deb36a91ebfcdaac5b78/spring-boot-starter-tomcat-1.5.19.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/11fb3d88ae7e3b757d70237064210ceb954a5a04/commons-codec-1.10-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.13/83113901bc2a377d698ccea35ad842786f37c6ad/jackson-mapper-asl-1.9.13-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-mapper-asl/1.9.13/1ee2f2bed0e5dd29d1cb155a166e6f8d50bbddb7/jackson-mapper-asl-1.9.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.2/5d1fb3fe056fe51e6f6ed9b4ef4898a774ed69c0/javax.transaction-api-1.2-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/javax.transaction/javax.transaction-api/1.2/d81aff979d603edd90dcd8db2abc1f4ce6479e3e/javax.transaction-api-1.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.3.22.RELEASE/a14774522410a2b8d7f2ba034b46a76602737df2/spring-aspects-4.3.22.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/4.3.22.RELEASE/9566c1b7718f79b4c778fe44da5a7bbc9d087de6/spring-aspects-4.3.22.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.10/35dcae32cc1c3bfb62546e64b90fc6359183b3b5/httpcore-4.4.10-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.10/acc54d9b28bdffe4bbde89ed2e4a1e86b5285e2b/httpcore-4.4.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.17/63577e87886c76228db9f8a2c50ea43cde5072eb/snakeyaml-1.17-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.17/7a27ea250c5130b2922b86dea63cbb1cc10a660c/snakeyaml-1.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.5.37/ff5c30dfad955d15955ece28fe195c9cc879a395/tomcat-embed-websocket-8.5.37-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.5.37/6fa15e093a7809764ea6d149efa4fcb383a833e7/tomcat-embed-websocket-8.5.37.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.37/44325a70e81fd8814f4056ecbf8d5bf89af86432/tomcat-embed-core-8.5.37-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.37/9ed6ab8f126d304af340492ade95a03878455af1/tomcat-embed-core-8.5.37.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.37/421b803955a13eafefbf80160d0fe5b6cc94e96b/tomcat-embed-el-8.5.37-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.37/fc91bf1f2f228859440e8665dffa1587b645ce8e/tomcat-embed-el-8.5.37.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-context/1.0.4.RELEASE/9878d5d027941e0d712dd810aaf3b13d27760744/spring-cloud-context-1.0.4.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-context/1.0.4.RELEASE/c4cb7ede7e36eb44288f2d973621942c22f938dc/spring-cloud-context-1.0.4.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-commons/1.0.4.RELEASE/5d8d45fa43aacabc49dcbf6e52f57fac198e1077/spring-cloud-commons-1.0.4.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-commons/1.0.4.RELEASE/128b515fe37557f59665d513e06937a56e4f17f3/spring-cloud-commons-1.0.4.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.10/b96d1a1c88ee6172811b2705323bccaa1e6435c/rxjava-1.0.10-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.0.10/c28ade6b57e4d4338b5fe0c9ac0e57805f1724f3/rxjava-1.0.10.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.13/4bba65cfdaa38e16e40ab5134651ac751e384c5f/aspectjweaver-1.8.13-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.13/ad94df2a28d658a40dc27bbaff6a1ce5fbf04e9b/aspectjweaver-1.8.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.13/7c122fa188f1dad85ab4053c043a9a326f91cd07/aspectjrt-1.8.13-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.13/bfc5a877fd80648e5467239d370735654aaf7a92/aspectjrt-1.8.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/36b6a585c0f0c63bd85fb04db0dcb7b217298956/guava-15.0-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/ed727a8d9f247e2050281cb083f1c77b09dcb5cd/guava-15.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/78c50ebda5784937ca1615fc0e1d0cb35857d572/commons-collections-3.2.2-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.1/8d30b90ae8bda4fbac8363161c8a9b5a99e23baf/commons-lang3-3.1-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.1/905075e6c80f206bbe6cf1e809d2caa69f420c76/commons-lang3-3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.0/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.13/6ed53c5ce78344e14296aa47769d67b10e1c7b2c/jackson-core-asl-1.9.13-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.13/3c304d70f42f832e0a86d45bd437f692129299a4/jackson-core-asl-1.9.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.5.37/f1be4579cfa19bb86a7130ca7667e5d812f66994/tomcat-jdbc-8.5.37-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.5.37/26d6e4e60893da6b405c396c9e7b6460e618d3ef/tomcat-jdbc-8.5.37.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-annotations-api/8.5.37/ca2226c235c23b1fd6ab9be7b42c1b1670cf0bde/tomcat-annotations-api-8.5.37-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-annotations-api/8.5.37/5a117dfc0b1971f8e8a691e22440b1142a9c034a/tomcat-annotations-api-8.5.37.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-crypto/4.2.11.RELEASE/7b303d8ffd150c3471951d5439c0e126175bf2b2/spring-security-crypto-4.2.11.RELEASE-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-crypto/4.2.11.RELEASE/2faead060e39c6368a1b48e0c701fa83e762b151/spring-security-crypto-4.2.11.RELEASE.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.5.37/69c668561c8b99a2dfe62d2e0f27f5d6aeaf0b85/tomcat-juli-8.5.37-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-juli/8.5.37/19f5e3191dc793d95bc527e01f9a0cc168c93a12/tomcat-juli-8.5.37.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.11/1b6214469321068fe4d58157768e1e039479fa1/logback-core-1.1.11-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.11/88b8df40340eed549fb07e2613879bf6b006704d/logback-core-1.1.11.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/67313d715fbf0ea4fd0bdb69217fb77f807a8ce5/commons-lang-2.6-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4/1.6.6/d94805a7d96302d2f2259cd056d6f5febd07ab4a/powermock-module-junit4-1.6.6-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4/1.6.6/6dd79e43e666a017545c7e32fe10da127650df6e/powermock-module-junit4-1.6.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-junit/2.0.0.0/3a86dcdd3aa6650b71d0258a5e86cb3ed25207ff/hamcrest-junit-2.0.0.0-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-junit/2.0.0.0/221cf2b5aabedf8cd76534996caa21b283ea5d0/hamcrest-junit-2.0.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4-common/1.6.6/1873b73bd2c53766942f1bd97b4518ae9924c3f7/powermock-module-junit4-common-1.6.6-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-module-junit4-common/1.6.6/6302c934d03f76fa348ec91c603e11ce05b61f44/powermock-module-junit4-common-1.6.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-mockito/1.6.6/2d895f7c0fe7d4021c2c3903d960ed8155d4b4af/powermock-api-mockito-1.6.6-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-mockito/1.6.6/99e7e9f0133ba5595b8a44cc6530baefda7e7e9e/powermock-api-mockito-1.6.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-mockito-common/1.6.6/fb4fbe217ad3d6688a8dd5bd37b0c7e747ddd4cf/powermock-api-mockito-common-1.6.6-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-mockito-common/1.6.6/da4b2a87c56506c49cef6e285724c266a719b63c/powermock-api-mockito-common-1.6.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-support/1.6.6/454098ff7957ae4fc2d1903d4c66234c3c205f1a/powermock-api-support-1.6.6-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-api-support/1.6.6/5ba4af06a0345c615efcdadb6ef35f5ae5a39a36/powermock-api-support-1.6.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-core/1.6.6/d411e2430179cec50f30a00b49123db20df0b864/powermock-core-1.6.6-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-core/1.6.6/8085fae46f60d7ff960f1cc711359c00b35c5887/powermock-core-1.6.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.10.19/8269667b73d9616600359a9b0ba1b1c7d0cf7a97/mockito-core-1.10.19-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.10.19/e8546f5bef4e061d8dd73895b4e8f40e3fe6effe/mockito-core-1.10.19.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hamcrest/java-hamcrest/2.0.0.0/a0413cf330eddf469d7600b36b4d115170f95a62/java-hamcrest-2.0.0.0-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.hamcrest/java-hamcrest/2.0.0.0/f1c8853ade0ecf707f5a261c830e98893983813/java-hamcrest-2.0.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-reflect/1.6.6/e8aec921ce6b7d414e38cbe7fdd20daa0a70c4bc/powermock-reflect-1.6.6-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.powermock/powermock-reflect/1.6.6/3fa5d0acee85c5662102ab2ef7a49bbb5a56bae5/powermock-reflect-1.6.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.4/19b316d8da7da3ae2539ee4ee2cf73a1e127fa73/objenesis-2.4-sources.jar" kind="lib" path="/Users/abed.ali/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.4/2916b6c96b50c5b3ec4452ed99401db745aabb27/objenesis-2.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+</classpath>
