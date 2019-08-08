@@ -50,7 +50,14 @@ version = "4.1.1"
 uploadArchives () {
     repositories {
         mavenDeployer {
-            
+            snapshotRepository(url: "") {
+                authentication(userName: , password: )
+            }
+            repository(url: "") {
+                 authentication(userName: , password: )
+            }
+            pom.groupId = ''
+            pom.version = version
         }
     }
 }
@@ -82,6 +89,7 @@ dependencies {
   compile 'com.amazonaws:aws-java-sdk-core:1.11.338'
   compile 'com.amazonaws:aws-java-sdk-sts:1.11.338'
   compile group: 'com.amazonaws', name: 'aws-java-sdk-sqs', version: '1.11.536'
+  compile group: 'com.amazonaws', name: 'aws-java-sdk-kinesis', version: '1.11.338'
   testCompile 'junit:junit:4.12'
   testCompile 'commons-logging:commons-logging:1.2'
   testCompile 'org.powermock:powermock-module-junit4:1.6.6'

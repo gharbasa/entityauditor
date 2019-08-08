@@ -18,7 +18,7 @@ public class InterceptorConfig implements Serializable {
 	
 	Logger logger = LoggerFactory.getLogger(InterceptorConfig.class);
 	
-	private String sqsQueue;
+	private String kinesisDatastream;
 	private boolean jdbcAudit;
 	
 	private List<AuditableEntity> entities = new ArrayList<>();
@@ -30,16 +30,16 @@ public class InterceptorConfig implements Serializable {
 	@PostConstruct
 	public void PostConstruct(){
 	     // init code goes here
-		logger.info("InterceptorConfig PostConstruct sqsQueue=" + sqsQueue);
+		logger.info("InterceptorConfig PostConstruct kinesisDatastream=" + kinesisDatastream);
 	}
 	
-	public String getSqsQueue() {
-		return sqsQueue;
+	public String getKinesisDatastream() {
+		return kinesisDatastream;
 	}
 
 
-	public void setSqsQueue(String sqsQueue) {
-		this.sqsQueue = sqsQueue;
+	public void setKinesisDatastream(String kinesisDatastream) {
+		this.kinesisDatastream = kinesisDatastream;
 	}
 
 
@@ -52,8 +52,8 @@ public class InterceptorConfig implements Serializable {
 		this.entities = entities;
 	}
 	
-	public boolean isQueueConfigured() {
-		return (sqsQueue != null && sqsQueue.trim().length() > 0);
+	public boolean isKinesisConfigured() {
+		return (kinesisDatastream != null && kinesisDatastream.trim().length() > 0);
 	}
 	
 	public boolean isAuditableEntity() {
@@ -70,7 +70,7 @@ public class InterceptorConfig implements Serializable {
 	
 	@Override
 	public String toString() {
-		return "InterceptorConfig [sqsQueue=" + sqsQueue + ", entities size=" + entities.size() + "]";
+		return "InterceptorConfig [sqsQueue=" + kinesisDatastream + ", entities size=" + entities.size() + "]";
 	}
 
 

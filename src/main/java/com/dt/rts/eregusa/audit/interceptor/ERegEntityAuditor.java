@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import com.dt.rts.eregusa.audit.config.AuditableEntity;
 import com.dt.rts.eregusa.audit.config.EntityAuditService;
 import com.dt.rts.eregusa.audit.config.InterceptorConfig;
+import com.dt.rts.eregusa.audit.config.KinesisPutDataStream;
 import com.dt.rts.eregusa.audit.config.SpringContextUtil;
 import com.dt.rts.eregusa.audit.entity.EntityAudit;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -46,15 +47,16 @@ public class ERegEntityAuditor extends EmptyInterceptor {
     	//Updates
     	InterceptorConfig interceptorConfig = SpringContextUtil.getApplicationContext().getBean(InterceptorConfig.class);
     	EntityAuditService myService = SpringContextUtil.getApplicationContext().getBean(EntityAuditService.class);
+    	KinesisPutDataStream kinesisPutDataStream = SpringContextUtil.getApplicationContext().getBean(KinesisPutDataStream.class);
     	
-    	if(!interceptorConfig.isJdbcAudit() && !interceptorConfig.isQueueConfigured()) {
+    	if(!interceptorConfig.isJdbcAudit() && !interceptorConfig.isKinesisConfigured()) {
     		logger.info("ERegHibernateInterceptor neither JDBC is enabled nor Queue is configured... returning.");
     		return super.onFlushDirty(entity, id, currentState, previousState, propertyNames, types); 
     	}
     	
     	logger.info("ERegHibernateInterceptor onFlushDirty11");
     	logger.info("ERegHibernateInterceptor entity.name11=" + entity.getClass().getName() + ", id=" + id); //class com.dt.rts.eregusa.cpa.entity.User,
-    	logger.info("ERegHibernateInterceptor onFlushDirty11 interceptorConfig.getSqsQueue=" + interceptorConfig.getSqsQueue());
+    	logger.info("ERegHibernateInterceptor onFlushDirty11 interceptorConfig.getKinesisDatastream=" + interceptorConfig.getKinesisDatastream());
     	
     	myService.print();
     	AuditableEntity auditableEntity = entityAuditable(entity.getClass().getName(), interceptorConfig); 
@@ -154,6 +156,16 @@ public class ERegEntityAuditor extends EmptyInterceptor {
 	    	}
 	    	
 	    	myService.save(entityAudit);
+	    	ObjectMapper entityAuditMapper = new ObjectMapper();
+	    	try {
+	    		logger.info("Posting data to Kinesis ");
+	    		String partitionKey = entityAudit.getEntity() + "-" + entityAudit.getRowId()  + "-" +  System.currentTimeMillis();
+	    		kinesisPutDataStream.putData(entityAuditMapper.writeValueAsBytes(entityAudit), interceptorConfig, partitionKey);
+	    		logger.info("Successfully Posted data to Kinesis ");
+	    	}catch(Exception e) {
+	    		e.printStackTrace();
+	    		logger.error("Error posting data to Kinesis " + e.getMessage());
+	    	}
     	} else {
     		logger.info("NO changes have been found on the entity " + entity.getClass().getName() + ", id=" + id);
     	}

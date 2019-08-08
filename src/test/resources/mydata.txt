@@ -12,12 +12,15 @@ CREATE TABLE `ereg_cpa`.`entity_audit` (
 
 
 ------------------------------------------------------------
+How to compare JSON documents and return the differences with Jackson or Gson?
+	https://stackoverflow.com/questions/50967015/how-to-compare-json-documents-and-return-the-differences-with-jackson-or-gson
+	
 spring.jpa.properties.hibernate.ejb.interceptor: com.dt.rts.eregusa.audit.interceptor.ERegHibernateInterceptor    
 
 
 
 eregusaaudit:
-  sqs-queue: eregusaauditentities
+  kinesis-datastream: ereg_kinesis_data_stream
   jdbc-audit: true
   entities:
     - 
